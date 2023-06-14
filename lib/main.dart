@@ -2,6 +2,7 @@ import 'package:ex_screen_efax/src/app.dart';
 import 'package:ex_screen_efax/src/localization/string_hardcoded.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:stack_trace/stack_trace.dart' as stack_trace;
 
@@ -14,6 +15,10 @@ void main() async {
   // await dotenv.load(fileName: ".env");
 
   WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
   registerErrorHandlers();
   runApp(const ProviderScope(child: MyApp()));
 }
