@@ -6,8 +6,12 @@
     <b>
         <a href="https://glittering-cupcake-bc67ec.netlify.app">Web demo</a><br>
     </b>
+     <b>
+        <a href="https://github.com/Spixz/ex-screen-efax/raw/main/app-release.apk">Apk link</a><br>
+    </b>
+    
 </p>
-
+<br>
 
 
 <p align="center">
