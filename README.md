@@ -1,16 +1,20 @@
-# ex_screen_efax
+<h1 align="center">
+    ex-efax
+</h1>
 
-A new Flutter project.
+<p align="center">
+    <b>
+        <a href="https://glittering-cupcake-bc67ec.netlify.app">Web demo</a><br>
+    </b>
+     <b>
+        <a href="https://github.com/Spixz/ex-screen-efax/raw/main/app-release.apk">Apk link</a><br>
+    </b>
+    
+</p>
+<br>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+<p align="center">
+  <img src="https://github.com/Spixz/ex-screen-efax/assets/43412722/c332f3c9-4ff0-4f47-ae75-e13b81e649bd" alt="second screen group"/>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
