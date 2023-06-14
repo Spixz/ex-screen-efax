@@ -19,17 +19,20 @@ class AttachmentViewer extends StatelessWidget {
             shrinkWrap: true,
             itemCount: selectedfiles.length,
             itemBuilder: (context, index) {
-              if (selectedfiles[index].fileMimeType.contains("image")) {
+              FileData fileData = selectedfiles[index];
+              if (fileData.fileMimeType.contains("image")) {
                 return Stack(fit: StackFit.passthrough, children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(20),
                     child: Container(
                         height: 200,
                         margin: const EdgeInsets.only(bottom: 10),
-                        child: Image.file(
-                          File(selectedfiles[index].filePath),
-                          fit: BoxFit.cover,
-                        )),
+                        child: (fileData.fromWeb)
+                            ? Image.memory(fileData.bytes!, fit: BoxFit.cover)
+                            : Image.file(
+                                File(selectedfiles[index].filePath),
+                                fit: BoxFit.cover,
+                              )),
                   ),
                   Positioned(
                     top: 5,
